@@ -1,0 +1,95 @@
+@import "twitter/bootstrap/bootstrap";
+body{
+  padding-top:130px;
+}
+@import "twitter/bootstrap/responsive";
+
+// Set the correct sprite paths
+@iconSpritePath: asset-path("twitter/bootstrap/glyphicons-halflings");
+@iconWhiteSpritePath: asset-path("twitter/bootstrap/glyphicons-halflings-white");
+
+// Set the Font Awesome (Font Awesome is default. You can disable by commenting below lines)
+// Note: If you use asset_path() here, your compiled bootstrap_and_overrides.css will not
+//       have the proper paths. So for now we use the absolute path.
+//@fontAwesomeEotPath: asset-path("fontawesome-webfont.eot");
+//@fontAwesomeEotPath_iefix: asset-path("fontawesome-webfont.eot#iefix");
+//@fontAwesomeWoffPath: asset-path("fontawesome-webfont.woff");
+//@fontAwesomeTtfPath: asset-path("fontawesome-webfont.ttf");
+//@fontAwesomeSvgPath: asset-path("fontawesome-webfont.svg");
+
+// Font Awesome
+//@import "fontawesome";
+
+// Glyphicons
+//@import "twitter/bootstrap/sprites.less";
+
+// Your custom LESS stylesheets goes here
+//
+// Since bootstrap was imported above you have access to its mixins which
+// you may use and inherit here
+//
+// If you'd like to override bootstrap's own variables, you can do so here as well
+// See http://twitter.github.com/bootstrap/customize.html#variables for their names and documentation
+//
+// Example:
+// @linkColor: #ff0000;
+
+//@navbarBackground:@black;
+//@navbarBackgroundHighlight:@black;
+@navbarLinkColor:@white;
+//@navbarLinkColorHover:@orange;
+//@navbarLinkColorActive:@orange;
+
+@linkColor:@orange;
+
+.thumbnail{
+//  float:left;
+}
+
+address{
+  //float:left;
+}
+
+.navbar{
+   .box-shadow(0 1px 10px rgba(0,0,0,1.5));
+
+}
+
+.nav{
+  padding-top:45px;
+  padding-right:40px;
+  
+}
+
+.nav li{
+  margin-right:10px;
+}
+
+.container{
+  width:80%;
+ //border:1px solid @black;
+ // height:800px;
+  //background:@white;
+  margin-bottom:40px;
+ //.box-shadow(0 1px 10px rgba(0,0,0,.5));
+}
+
+body{
+  //background:@orange;
+  //#gradient > .radial(@white, @white);
+  background-image:url('/wild_oliva_@2X.png');
+  
+}
+
+.hero-unit{
+  margin-top:35px;
+  .box-shadow(0 1px 10px rgba(0,0,0,.95));
+ // background:@grayLighter;
+}
+
+.thumbnail{
+  text-align:center;
+    .box-shadow(0 1px 10px rgba(0,0,0,.75));
+
+  
+}
